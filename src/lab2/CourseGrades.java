@@ -6,7 +6,7 @@ package lab2;
 
 /**
  *
- * @author 6298805
+ * @author Jacques-Conrad
  */
 public class CourseGrades implements Analyzable {
     private GradedActivity[] grades = new GradedActivity[4];

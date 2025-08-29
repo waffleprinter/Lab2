@@ -6,7 +6,7 @@ package lab2;
 
 /**
  *
- * @author 6298805
+ * @author Jacques-Conrad
  */
 public interface Analyzable {
     public double getAverage();
