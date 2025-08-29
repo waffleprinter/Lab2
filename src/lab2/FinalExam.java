@@ -28,4 +28,11 @@ public class FinalExam extends GradedActivity {
     public int getNumMissed() {
         return numMissed;
     }
+
+    @Override
+    public String toString() {
+        return "Each question counts " + getPointsEach() + " points" +
+                "\nThe exam score is " + getScore() + 
+                "\nThe exam grade is " + getGrade();
+    }
 }
