@@ -14,11 +14,13 @@ public class PassFailExam extends PassFailActivity {
     private int numMissed;
     
     public PassFailExam(int questions, int missed, double minPassing) {
+        super(minPassing);
+        
         this.numQuestions = questions;
         this.pointsEach = getPointsEach();
         this.numMissed = missed;
         
-        super(minPassing);
+        this.setScore((numQuestions - numMissed) * pointsEach);
     }
     
     public double getPointsEach() {
@@ -29,4 +31,10 @@ public class PassFailExam extends PassFailActivity {
         return numMissed;
     }
     
+    @Override
+    public String toString() {
+        return "Each question counts " + getPointsEach() + " points" +
+                "\nThe exam score is " + getScore() + 
+                "\nThe exam grade is " + getGrade();
+    }
 }
