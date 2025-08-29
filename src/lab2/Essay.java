@@ -14,6 +14,17 @@ public class Essay extends GradedActivity {
     private double correctLength;
     private double content;
 
+    public Essay(double grammar, double spelling, double correctLength, double content) {
+        this.grammar = grammar;
+        this.spelling = spelling;
+        this.correctLength = correctLength;
+        this.content = content;
+        
+        this.setScore(grammar + spelling + correctLength + content);
+    }
+    
+    
+
     public double getGrammar() {
         return grammar;
     }
