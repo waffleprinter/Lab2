@@ -7,6 +7,7 @@ package lab2;
 /**
  *
  * @author Jacques-Conrad
+ * https://github.com/waffleprinter/Lab2
  */
 public class CourseGrades implements Analyzable {
     private GradedActivity[] grades = new GradedActivity[4];

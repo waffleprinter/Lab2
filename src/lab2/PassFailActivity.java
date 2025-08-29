@@ -7,6 +7,7 @@ package lab2;
 /**
  *
  * @author Jacques-Conrad
+ * https://github.com/waffleprinter/Lab2
  */
 public class PassFailActivity extends GradedActivity {
     private double minPassingScore;
